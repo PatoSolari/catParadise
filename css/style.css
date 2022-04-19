@@ -1,0 +1,832 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: Asian;
+    src: url("../fuentes/asianButterfly.otf");
+}
+/* INDEX */
+
+/* LAYOUT */
+
+body{
+    background-color: #F3E9DD;
+}
+
+.layoutI{
+    display: grid;
+    grid-template-areas: 
+        "headerI headerI"
+        "tituloI tituloI"
+        "subtituloI subtituloI"
+        "nota1 aside"
+        "nota2 aside"
+        "footer footer";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% 9% 7% 32% 34% 8%;
+}
+
+/* HEADER Y NAV */
+
+.header{
+    margin:0;
+    padding:0;
+    background-color: #DAB88B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#headerI{
+    grid-area: headerI;
+}
+
+.header img{
+    margin: 1rem;
+    width: 110px;
+    height: 100px ;
+}
+.header nav{
+    width: 65%;
+}
+
+.header nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.header nav ul li a{
+    text-decoration: none; 
+    color:   #FDF6EC;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 1.5px #B7CADB;
+}
+
+.header nav ul li a:hover{
+    color: #B7CADB;
+}
+
+/* MAIN Y BODY */
+
+.tituloI{
+    grid-area: tituloI;
+    background-color: #F3E9DD;
+}
+
+.tituloI h1{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.subtituloI{
+    grid-area: subtituloI;
+    background-color: #F3E9DD;
+}
+
+.subtituloI h2{
+    color: #DAB88B;
+    font-size: 4rem;
+    text-align: left;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.nota1{
+    grid-area: nota1;
+    background-color: #F3E9DD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nota1 h3{
+    color: #B7CADB;
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.nota1 > div{
+    border-radius: 5%;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 5px gray;
+    width: 50%;
+    height: 90%;
+}
+
+.nota2{
+    grid-area: nota2;
+    background-color: #F3E9DD;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.nota2 h3{
+    color: #B7CADB;
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.nota2 > div{
+    border-radius: 5%;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 5px grey;
+    width: 50%;
+    height: 90%;
+}
+.imagenNotas{
+    width: 40%;
+    height: 90%;
+    margin: 3rem;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px 5px #B7CADB;
+}
+
+.textoNotas{
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 0.5rem;
+    text-indent: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formatoNotas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*NOTA AL COSTADO*/
+
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside h2{
+    color: #DAB88B;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* .aside h3{
+    color: #DAB88B;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+} */
+
+table, th, tr, td{
+    font-size: 1.3rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.posicionTabla{
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 5rem;
+    flex-wrap: nowrap;
+}
+
+.ayuda{
+    color: #DAB88B;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 10px 5px grey;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    width: 80%;
+}
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: #DAB88B;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    margin-left: 25px;
+    color: brown;
+    
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-around;
+    border: #B7CADB;
+    background-color: #B7CADB;
+    border-radius: 20px;
+    margin: 20px;
+    width: 40%;
+}
+
+.logoRedes{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+/* PAGE CONTACTO */
+
+.layoutC{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "contacto contacto"
+    "form ubi"
+    "form data"
+    "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 11.4% 9% 45% 28% 8%;
+    
+}
+
+#encabezado{
+    grid-area: encabezado;
+}
+
+#contacto{
+    grid-area: contacto;
+}
+
+#form{
+    grid-area: form;
+}
+
+#ubi{
+    grid-area: ubi;
+}
+
+#data{
+    grid-area: data;
+}
+
+#pie{
+    grid-area: pie;
+}
+
+.tituloC{
+    grid-area: tituloI;
+}
+
+.tituloC h1{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+form{
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    margin: 35px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+
+}
+
+form h2{
+    text-align: center;
+    font-size: 4rem;
+    color: #B7CADB;
+    font-weight: bold;
+}
+
+.input{
+    width: 100%;
+}
+.horario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+.tipoMotivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+form textarea{
+    max-width: 460px;
+    min-width: 460px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.formatoT{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B7CADB;
+}
+
+.formatoTDos{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B7CADB;
+    margin-top: 10px;
+}
+.formatoTTres{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a7fa0;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.ubicacion h2{
+    color: #DAB88B;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+.datos{
+    border-radius: 5%;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 5px gray;
+    width: 70%;
+    height: 28%;
+    margin-top: 4rem;
+}
+.formatoU{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B7CADB;
+    font-weight: bold;
+}
+.formatoD{
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#5a7fa0;
+}
+
+/* PAGE QUIENES SOMOS*/
+
+.img-uno{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg);
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#tituloQ{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienesS{
+    margin: 2.5rem;
+}
+
+/*RESCATES*/
+
+.tituloR{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contenedor{
+    width: 90vw;
+    height: 45vh;
+    margin: 2rem;
+}
+
+
+/*TINDER GATUNO*/
+
+.tituloT{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* RESPONSIVE A 360*/
+
+/*INDEX Y ETIQUETAS COMUNES A TODAS LAS PAGES*/
+
+@media screen and (max-width: 360px){
+    
+    .layoutI{
+        display: grid;
+        grid-template-areas:
+        "headerI"
+        "tituloI"
+        "subtituloI"
+        "nota1"
+        "nota2"
+        "aside"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .header{
+        margin:0;
+        padding:0;
+        background-color: #DAB88B;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .header nav{
+        width: 40%;
+        margin: 0rem;
+    }
+    
+    .header nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        font-size: 1rem;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .tituloI h1{
+        font-size: 8rem;
+        padding-top: 2rem;
+    }
+
+    .subtituloI h2{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+    .nota1{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .imagenNotas{
+        width: 80%;
+        height: 50%;
+        padding: 1rem;
+        flex-wrap: nowrap;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .formatoNotas{
+        width: 80%;
+        height: 50%;
+        flex-wrap: nowrap;
+        padding: 0%;
+    }
+
+    .nota1 > div{
+        border-radius: 5%;
+        padding: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 10px 5px gray;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .nota1 h3{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #a77a28
+    }
+    .textoNotas{
+        font-size: 1.2rem;
+        text-align: justify;
+        text-indent: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    } 
+    
+    .nota2{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 0%;
+    }
+    .nota2 h3{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #a77a28
+    }
+    
+    .nota2 > div{
+        border-radius: 5%;
+        padding: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 10px 5px gray;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .ayuda{
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5%;
+        background-color: rgba(0, 0, 0, 0.05);
+        box-shadow: 5px 5px 10px 5px grey;
+        width: 80%;
+        margin: 2rem 4rem 2rem 4rem;
+    }
+
+    .aside h2{
+        display: none;
+    }
+
+    .posicionTabla{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+    
+    .footer h3{
+        font-size: 1.5rem;
+        color: brown;
+    }
+    
+    .footer div{
+        display: flex;
+        justify-content: space-around;
+        border: #B7CADB;
+        background-color: #B7CADB;
+        border-radius: 20px;
+        width: 80%;
+    }
+    
+    .logoRedes{
+        width: 30px;
+        height: 30px;
+        margin: 15px;
+    }
+
+    /*PAGE CONTACTO RESPONSIVE*/
+
+    .layoutC{
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "contacto"
+        "form"
+        "form"
+        "ubi"
+        "data"
+        "pie";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    .tituloC h1{
+        font-size: 8rem;
+        padding-top: 2rem;
+    }
+    
+    form{
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: justify;
+        margin:auto;    
+    }
+    
+    form h2{
+        text-align: center;
+        font-size: 3rem;
+        color: #B7CADB;
+        font-weight: bold;
+    }
+    
+    .input{
+        width: 100%;
+    }
+    .horario{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end
+    }
+    .tipoMotivo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+    form textarea{
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .formatoT{
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #B7CADB;
+    }
+    
+    .formatoTDos{
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #B7CADB;
+        margin-top: 10px;
+    }
+    .formatoTTres{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #5a7fa0;
+    }
+    
+    .ubicacion h2{
+        color: #DAB88B;
+        font-size: 3rem;
+        margin-top:3rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .ubicacion iframe{
+        width: 324px;
+        height: 250px;
+        margin-left: 2rem;
+    }
+
+    .datos{
+        width: 90%;
+        height: auto;
+        margin-top:2rem;
+        margin-bottom: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .formatoU{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #a77a28;
+        font-weight: none;
+    }
+    .formatoD{
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#5a7fa0;
+    }
+
+    /* PAGE QUIENES SOMOS RESPONSIVE */
+
+    .img-uno{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg);
+        width: 360px;
+
+    }
+    
+    .parallax{
+        background-attachment:unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        width: 100%;
+        position: relative;
+    }
+    
+    .parallax div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #tituloQ{
+        color: #B7CADB;
+        font-size: 8rem;
+        font-weight: bold;
+    }
+    
+    .quienesS{
+        margin: 2.5rem;
+    }
+
+    /*PAGE RESCATES RESPONSIVE*/
+
+    .tituloR{
+        font-size: 8rem;
+        padding-top: 2rem;
+    }
+
+    /*TINDER GATUNO*/
+
+    .tituloT{
+        font-size: 10rem;
+        padding-top: 0.5rem;
+    }
+}

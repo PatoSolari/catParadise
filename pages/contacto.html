@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logochico.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="layoutC">
+        <header id="encabezado" class="header">
+            <a href="../index.html"><img src="../images/logochico.png" alt="logo de la ONG"></a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="Rescates.html">Rescates</a></li>
+                    <li><a href="tindergatos.html">Tinder Gatuno</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contacto" class="tituloC">
+            <h1 >Contacto</h1>
+        </div>
+        <form id="form" class="formulario" action="">
+            <h2>CONTACTO</h2>
+            <div>
+                <label class="formatoT">Nombre</label>
+                <input class="input" type="text" name="nombre" placeholder="Ingrese su Nombre">
+            </div>
+            <div>
+                <label class="formatoT">Teléfono</label>
+                <input class="input" type="tel" name="telefono" placeholder="Ingrese su Teléfono: Ej. 11-1234-5678">
+            </div>
+            <div>
+                <label class="formatoT">Email</label>
+                <input class="input" type="email" name="email" placeholder="Ingrese su email">   
+            </div>
+            <div>
+                <div class="formatoTDos">
+                    <label> Horario que desea ser contactado:</label>
+                </div>
+                <div class="horario">
+                    <div>
+                        <input class="boton" type="checkbox" value="m" name="maniana"><span class="formatoTTres">Mañana</span>
+                    </div>
+                    <div>
+                        <input class="boton" type="checkbox" value="t" name="tarde"><span class="formatoTTres">tarde</span>
+                    </div>
+                </div>
+                <div class="formatoTDos">
+                    <label>Motivo de Contacto</label>
+                </div>
+                <div class="tipoMotivo">
+                    <div>
+                        <input class="boton" type="radio" name="Motivo"><span class="formatoTTres">Volutariado</span>
+                    </div>
+                    <div>
+                        <input class="boton" type="radio" name="Motivo"><span class="formatoTTres">Rescate</span>
+                    </div>
+                    <div>
+                        <input class="boton" type="radio" name="Motivo"><span class="formatoTTres">Donaciones</span>
+                    </div>
+                </div>
+            </div>
+            <div class="formatoTDos">
+                <label>Sos Voluntario</label>
+                <select name="voluntario">
+                    <option value="s">Si</option>
+                    <option value="n">No</option>
+                </select>
+            </div>
+            <textarea name="mensaje" placeholder="Deje aquí su mensaje"></textarea>
+            <div>
+                <input class="boton" type="submit" value="Enviar">
+                <input class="boton" type="reset" value="Limpiar Formulario">
+            </div>
+        </form>
+        <div>
+            <div id=ubi class="ubicacion">
+                <div>
+                    <h2>Encontranos en</h2>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13150.844784226909!2d-58.55093397828794!3d-34.510205309302876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb086ca7a35a5%3A0xae2d300b606cf0bc!2sJoaqu%C3%ADn%20V.%20Gonz%C3%A1lez%201126%2C%20B1607AKL%20Villa%20Adelina%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649342805346!5m2!1ses!2sar" width="500" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div id=data class="datos">
+                <h3 class="formatoU">Dirección:<span class="formatoD"> Joaquín V. Gonzalez 1126, Villa Adelina</span></h3>
+                <h3 class="formatoU">telefono:<span class="formatoD"> 4652-4586</span></h3>
+                <h3 class="formatoU">Horario de Atención:<span class="formatoD"> De 09:00 Hs. a 18:00Hs.</span></h3>
+                <h3 class="formatoU">mail:<span class="formatoD"> paraisogatuno@gmail.com</span></h3>
+            </div>
+        </div>
+        <footer id=pie class="footer">    
+            <div>
+                <a href="www.whatsapp.com"><img class="logoRedes" src="../images/logoWhatsapp.png" alt="logo wtsp"></a>
+                <a href="www.instagram.com"><img class="logoRedes" src="../images/logoIg.png" alt="logo ig"></a>
+                <a href="www.twitter.com"><img class="logoRedes" src="../images/logoTwtr.png" alt="logo twtr"></a>
+                <a href="www.facebook.com"><img class="logoRedes" src="../images/logoFace.png" alt="logo fb"></a>
+            </div>
+            <h3>Web diseñada por Patricio Solari</h3>
+            <h3>Se reservan todos los derechos de autor</h3>
+        </footer>
+    </div>
+</body>
+</html>
