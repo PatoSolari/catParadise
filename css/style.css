@@ -73,6 +73,7 @@ body{
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 1.5px 1.5px 1.5px #B7CADB;
+    transition: all 1s;
 }
 
 .header nav ul li a:hover{
@@ -406,18 +407,19 @@ form textarea{
 }
 
 .datos{
+
     border-radius: 5%;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 10px 5px gray;
-    width: 70%;
-    height: 28%;
+    width: 80%;
+    height: 35%;
     margin-top: 4rem;
 }
 .formatoU{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #B7CADB;
+    color: #a77a28;
     font-weight: bold;
 }
 .formatoD{
@@ -425,6 +427,16 @@ form textarea{
     font-family: Arial, Helvetica, sans-serif;
     color:#5a7fa0;
 }
+
+.icono{
+    display: flex;
+    flex-direction: row;
+}
+
+.icono img{
+    margin: 0.7rem;
+}
+
 
 /* PAGE QUIENES SOMOS*/
 
