@@ -505,6 +505,19 @@ form textarea{
     padding-top: 2rem;
 }
 
+.fotosTinder{
+    height: 55rem;
+    width: 45rem;
+}
+
+.textoTinder{
+    width: 45rem;
+}
+
+
+.botonRedondo{
+    margin: 2rem;
+}
 /* RESPONSIVE A 360*/
 
 /*INDEX Y ETIQUETAS COMUNES A TODAS LAS PAGES*/
