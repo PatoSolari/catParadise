@@ -1,8 +1,8 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 html{
     font-size: 62.5%;
@@ -496,7 +496,7 @@ form textarea{
 
 /*TINDER GATUNO*/
 
-.tituloT{
+#tituloT{
     color: #B7CADB;
     font-size: 10rem;
     font-weight: bold;
@@ -505,13 +505,37 @@ form textarea{
     padding-top: 2rem;
 }
 
+.img-dos{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchos\ gatos.jpg);
+}
+
+.parallax2{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 .fotosTinder{
-    height: 55rem;
-    width: 45rem;
+    height: 50rem;
+    width: 40rem;
 }
 
 .textoTinder{
-    width: 45rem;
+    width: 40rem;
 }
 
 
