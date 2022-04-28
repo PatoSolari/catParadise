@@ -527,7 +527,14 @@ form textarea{
     width: 100%;
 }
 
-
+.nombreG{
+    color: #B7CADB;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 3rem;
+}
 
 .fotosTinder{
     height: 50rem;
@@ -546,7 +553,7 @@ form textarea{
 
 /*INDEX Y ETIQUETAS COMUNES A TODAS LAS PAGES*/
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
     
     .layoutI{
         display: grid;
@@ -873,8 +880,31 @@ form textarea{
 
     /*TINDER GATUNO*/
 
-    .tituloT{
-        font-size: 10rem;
+    #tituloT{
+        font-size: 8rem;
         padding-top: 0.5rem;
     }
+
+    .img-dos{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchos\ gatos.jpg);
+    }
+    
+    .parallax2{
+        background-attachment: unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        max-width: 100%;
+        position: relative;
+    }
+    
+    .parallax2 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
 }
