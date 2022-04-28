@@ -553,7 +553,7 @@ form textarea{
 
 /*INDEX Y ETIQUETAS COMUNES A TODAS LAS PAGES*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     
     .layoutI{
         display: grid;
