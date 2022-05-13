@@ -90,17 +90,17 @@ body {
     border-radius: 5%;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 5px 5px 10px 5px gray;
+    box-shadow: 5px 5px 10px 5px grey;
     width: 50%;
     height: 90%; }
 
 .nota2 {
-  grid-area: nota2;
   background-color: #F3E9DD;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
+  grid-area: nota2;
+  flex-direction: row-reverse;
   padding-top: 15px; }
   .nota2 h3 {
     color: #B7CADB;
@@ -325,3 +325,354 @@ table, th, tr, td {
     width: 30px;
     height: 30px;
     margin: 15px; } }
+
+.layoutC {
+  display: grid;
+  grid-template-areas: "encabezado encabezado" "contacto contacto" "form ubi" "form data" "pie pie";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 11.4% 9% 45% 28% 8%; }
+
+#encabezado {
+  grid-area: encabezado; }
+
+#contacto {
+  grid-area: contacto; }
+
+#form {
+  grid-area: form; }
+
+#ubi {
+  grid-area: ubi; }
+
+#data {
+  grid-area: data; }
+
+#pie {
+  grid-area: pie; }
+
+.tituloC {
+  grid-area: tituloI; }
+
+.tituloC h1 {
+  color: #B7CADB;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Asian;
+  text-align: center;
+  padding-top: 2rem; }
+
+form {
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  margin: 35px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between; }
+  form h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: #B7CADB;
+    font-weight: bold; }
+
+.input {
+  width: 100%; }
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.tipoMotivo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px; }
+
+form textarea {
+  max-width: 460px;
+  min-width: 460px;
+  max-height: 200px;
+  min-height: 200px; }
+
+.boton:hover {
+  cursor: pointer; }
+
+.formatoT {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B7CADB; }
+
+.formatoTDos {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B7CADB;
+  margin-top: 10px; }
+
+.formatoTTres {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a7fa0; }
+
+.ubicacion {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start; }
+  .ubicacion h2 {
+    color: #DAB88B;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem; }
+
+.datos {
+  border-radius: 5%;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 5px gray;
+  width: 80%;
+  height: 35%;
+  margin-top: 4rem; }
+
+.formatoU {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a77a28;
+  font-weight: bold; }
+
+.formatoD {
+  font-size: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a7fa0; }
+
+.icono {
+  display: flex;
+  flex-direction: row; }
+  .icono img {
+    margin: 0.7rem; }
+
+@media screen and (max-width: 450px) {
+  .layoutC {
+    display: grid;
+    grid-template-areas: "encabezado" "contacto" "form" "form" "ubi" "data" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+  .tituloC h1 {
+    font-size: 8rem;
+    padding-top: 2rem; }
+  form {
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: justify;
+    margin: auto; }
+    form h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #B7CADB;
+      font-weight: bold; }
+  .input {
+    width: 100%; }
+  .horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .tipoMotivo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px; }
+  form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px; }
+  .formatoT {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B7CADB; }
+  .formatoTDos {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #B7CADB;
+    margin-top: 10px; }
+  .formatoTTres {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a7fa0; }
+  .ubicacion h2 {
+    color: #DAB88B;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem; }
+  .ubicacion iframe {
+    width: 324px;
+    height: 250px;
+    margin-left: 2rem; }
+  .datos {
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .formatoU {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a77a28;
+    font-weight: none; }
+  .formatoD {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a7fa0; } }
+
+#tituloT {
+  color: #B7CADB;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Asian;
+  text-align: center;
+  padding-top: 2rem; }
+
+.img-dos {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg); }
+
+.parallax2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  max-width: 100%;
+  position: relative; }
+
+.parallax2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+.nombreG {
+  color: #B7CADB;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 3rem; }
+
+.fotosTinder {
+  height: 50rem;
+  width: 40rem; }
+
+.textoTinder {
+  width: 40rem; }
+
+.botonRedondo {
+  margin: 2rem; }
+
+@media screen and (max-width: 450px) {
+  #tituloT {
+    font-size: 8rem;
+    padding-top: 0.5rem; }
+  .img-dos {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg); }
+  .parallax2 {
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    max-width: 100%;
+    position: relative; }
+  .parallax2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; } }
+
+.img-uno {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg); }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  max-width: 100%;
+  position: relative; }
+
+.parallax div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; }
+
+#tituloQ {
+  color: #B7CADB;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Asian;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.quienesS {
+  margin: 2.5rem; }
+
+@media screen and (max-width: 450px) {
+  .img-uno {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg);
+    width: 360px; }
+  .parallax {
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    position: relative; }
+  .parallax div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+  #tituloQ {
+    color: #B7CADB;
+    font-size: 8rem;
+    font-weight: bold; }
+  .quienesS {
+    margin: 2.5rem; } }
+
+.tituloR {
+  color: #B7CADB;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Asian;
+  text-align: center;
+  padding-top: 2rem; }
+
+.contenedor {
+  width: 90vw;
+  height: 45vh;
+  margin: 2rem; }
+
+@media screen and (max-width: 450px) {
+  .tituloR {
+    font-size: 8rem;
+    padding-top: 2rem; } }

@@ -1,0 +1,74 @@
+.img-uno{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg);
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax{
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#tituloQ{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienesS{
+    margin: 2.5rem;
+}
+
+@media screen and (max-width: 450px){
+    .img-uno{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/quienessomosp.jpg);
+        width: 360px;
+    }
+
+    .parallax{
+        background-attachment:unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .parallax{
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    #tituloQ{
+        color: #B7CADB;
+        font-size: 8rem;
+        font-weight: bold;
+    }
+
+    .quienesS{
+        margin: 2.5rem;
+    }
+}

@@ -1,0 +1,21 @@
+.tituloR{
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.contenedor{
+    width: 90vw;
+    height: 45vh;
+    margin: 2rem;
+}
+
+@media screen and (max-width: 450px){
+    .tituloR{
+        font-size: 8rem;
+        padding-top: 2rem;
+    }
+}

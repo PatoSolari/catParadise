@@ -1,3 +1,18 @@
+@mixin titulonota {
+    color: map-get($colores, colorT);
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+@mixin formatonoticia {
+    border-radius: 5%;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 5px grey;
+    width: 50%;
+    height: 90%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +24,7 @@ html{
 }
 
 body{
-    background-color: $colorFondo;
+    background-color: map-get($colores, colorFondo);
 }
 
 @font-face {
@@ -33,7 +48,7 @@ body{
 .header{
     margin:0;
     padding:0;
-    background-color: $colorHyF;
+    background-color: map-get($colores, colorHyF);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,10 +73,10 @@ body{
                     color:   #FDF6EC;
                     font-weight: bold;
                     text-transform: uppercase;
-                    text-shadow: 1.5px 1.5px 1.5px $colorT;
+                    text-shadow: 1.5px 1.5px 1.5px map-get($colores, colorT);
                     transition: all 1s;
                     &:hover{
-                        color: $colorT;
+                        color: map-get($colores, colorT);
                     }
                 }
             }
@@ -75,9 +90,9 @@ body{
 
 .tituloI{
     grid-area: tituloI;
-    background-color: $colorFondo;
+    background-color: map-get($colores, colorFondo);
     h1{
-        color: $colorT;
+        color: map-get($colores, colorT);
         font-size: 10rem;
         font-weight: bold;
         font-family: Asian;
@@ -88,9 +103,9 @@ body{
 
 .subtituloI{
     grid-area: subtituloI;
-    background-color: $colorFondo;
+    background-color: map-get($colores, colorFondo);
     h2{
-        color: $colorHyF;
+        color: map-get($colores, colorHyF);
         font-size: 4rem;
         text-align: left;
         margin: 25px;
@@ -101,47 +116,31 @@ body{
 
 .nota1{
     grid-area: nota1;
-    background-color: $colorFondo;
+    background-color: map-get($colores, colorFondo);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     h3{
-        color: $colorT;
-        font-size: 3rem;
-        text-align: left;
-        margin-top: 1.5rem;
+        @include titulonota;
     }
     > div{
-        border-radius: 5%;
-        padding: 1.5rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        box-shadow: 5px 5px 10px 5px gray;
-        width: 50%;
-        height: 90%;
+        @include formatonoticia;
     }
 }
 
 .nota2{
-    grid-area: nota2;
-    background-color: $colorFondo;
+    background-color: map-get($colores, colorFondo);
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: center;
+    grid-area: nota2;
+    flex-direction: row-reverse;
     padding-top: 15px;
     h3{
-        color: $colorT;
-        font-size: 3rem;
-        text-align: left;
-        margin-top: 1.5rem;
+        @include titulonota;
     }
     > div{
-        border-radius: 5%;
-        padding: 1.5rem;
-        background-color: rgba(0, 0, 0, 0.2);
-        box-shadow: 5px 5px 10px 5px grey;
-        width: 50%;
-        height: 90%;
+        @include formatonoticia;
     }
 }
 
@@ -150,7 +149,7 @@ body{
     height: 90%;
     margin: 3rem;
     border-radius: 15%;
-    box-shadow: 5px 5px 10px 5px $colorT;
+    box-shadow: 5px 5px 10px 5px map-get($colores, colorT);
 }
 
 .textoNotas{
@@ -175,7 +174,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     h2{
-        color: $colorHyF;
+        color: map-get($colores, colorHyF);
         font-size: 3rem;
         text-align: center;
         justify-content: center;
@@ -203,7 +202,7 @@ table, th, tr, td{
 }
 
 .ayuda{
-    color: $colorHyF;
+    color: map-get($colores, colorHyF);
     font-size: 2.5rem;
     text-align: center;
     justify-content: center;
@@ -218,7 +217,7 @@ table, th, tr, td{
 
 .footer{
     grid-area: footer;
-    background-color: $colorHyF;
+    background-color: map-get($colores, colorHyF);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -231,8 +230,8 @@ table, th, tr, td{
     div{
         display: flex;
         justify-content: space-around;
-        border: $colorT;
-        background-color: $colorT;
+        border: map-get($colores, colorT);
+        background-color: map-get($colores, colorT);
         border-radius: 20px;
         margin: 20px;
         width: 40%;
@@ -262,7 +261,7 @@ table, th, tr, td{
     .header{
         margin:0;
         padding:0;
-        background-color: $colorHyF;
+        background-color: map-get($colores, colorHyF);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -391,8 +390,8 @@ table, th, tr, td{
         div{
             display: flex;
             justify-content: space-around;
-            border: $colorT;
-            background-color: $colorT;
+            border: map-get($colores, colorT);
+            background-color: map-get($colores, colorT);
             border-radius: 20px;
             width: 80%;
         }

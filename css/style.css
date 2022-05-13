@@ -549,7 +549,7 @@ form textarea{
 .botonRedondo{
     margin: 2rem;
 }
-/* RESPONSIVE A 360*/
+/* RESPONSIVE A 450*/
 
 /*INDEX Y ETIQUETAS COMUNES A TODAS LAS PAGES*/
 
@@ -886,7 +886,7 @@ form textarea{
     }
 
     .img-dos{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchos\ gatos.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg);
     }
     
     .parallax2{
