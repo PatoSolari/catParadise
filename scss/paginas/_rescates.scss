@@ -1,21 +1,126 @@
-.tituloR{
+#tituloR{
     color: #B7CADB;
     font-size: 10rem;
     font-weight: bold;
     font-family: Asian;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 12rem;
+    grid-area: tituloR;
+    justify-content: center;
+    align-items: center;
+}
+
+.layoutR{
+    display: grid;
+    grid-template-areas: 
+        "headerR"
+        "tituloR"
+        "subtituloR"
+        "card"
+        "footerR";
+}
+
+#headerR{
+    grid-area: headerR;
+}
+
+.subtituloR{
+    grid-area: subtituloR;
+    margin: 3rem;
+    color: map-get($colores, colorHyF);
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+}
+
+.card-body{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+    color: map-get($colores, colorHyF);
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-text{
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerR{
+    grid-area: footerR;
 }
 
 .contenedor{
-    width: 90vw;
-    height: 45vh;
     margin: 2rem;
+    grid-area: card;
 }
 
+.img-tres{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg);
+}
+
+.parallax3{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.parallax{
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
 @media screen and (max-width: 450px){
-    .tituloR{
-        font-size: 8rem;
-        padding-top: 2rem;
+    #tituloR{
+        font-size: 6rem;
+        padding-top: 0.5rem;
+    }
+    .subtituloR{
+        margin: 1rem;
+        color: map-get($colores, colorHyF);
+        font-size: 2rem;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;  
+        font-weight: bold;
+    }
+    .img-tres{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg);
+    }
+    .parallax3{
+        background-attachment: unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        max-width: 100%;
+        position: relative;
+    }
+    .parallax3{
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
     }
 }
