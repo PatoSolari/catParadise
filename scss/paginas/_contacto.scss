@@ -1,3 +1,17 @@
+.img-cuatro{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotocontacto.jpg);
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    max-width: 100%;
+    position: relative;
+}
+
 .layoutC{
     display: grid;
     grid-template-areas: 
@@ -7,7 +21,7 @@
     "form data"
     "pie pie";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 11.4% 9% 45% 28% 8%;
+    grid-template-rows: 9.8% 26% 43% 17% 8%;
     
 }
 
@@ -36,10 +50,9 @@
 }
 
 .tituloC{
-    grid-area: tituloI;
-}
-
-.tituloC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h1{
         color: #B7CADB;
         font-size: 10rem;
@@ -52,9 +65,10 @@
 
 form{
     width: 500px;
-    height: 600px;
+    //height: 600px;
     padding: 20px;
     margin: 35px;
+    margin-top: 4rem;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
@@ -90,10 +104,18 @@ form textarea{
     min-height: 200px;
 }
 
-.boton:hover{
-    cursor: pointer;
+.cntBtn{
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.boton{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
 .formatoT{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -105,11 +127,15 @@ form textarea{
     font-family: Arial, Helvetica, sans-serif;
     color: #B7CADB;
     margin-top: 10px;
+    select{
+        font-size: 1.5rem;
+    }
 }
 .formatoTTres{
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #5a7fa0;
+    padding-left: 0.5rem;
 }
 
 .ubicacion{
@@ -117,6 +143,7 @@ form textarea{
     justify-content: space-around;
     flex-direction: column;
     align-items:flex-start;
+    margin-top: 4rem;
     h2{
         color: #DAB88B;
         font-size: 4rem;
@@ -132,7 +159,6 @@ form textarea{
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 10px 5px gray;
     width: 80%;
-    height: 35%;
     margin-top: 4rem;
 }
 
@@ -158,6 +184,19 @@ form textarea{
 }
 
 @media screen and (max-width: 450px){
+    .img-cuatro{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotocontacto.jpg);
+        width: 360px;
+    }
+    .parallax{
+        background-attachment:unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        width: 100%;
+        position: relative;
+    }
     .layoutC{
         display: grid;
         grid-template-areas: 
@@ -189,7 +228,6 @@ form textarea{
         overflow: hidden;
         justify-content: space-between;
         align-items: justify;
-        margin:auto;
         h2{
             text-align: center;
             font-size: 3rem;

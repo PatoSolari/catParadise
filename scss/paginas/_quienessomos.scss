@@ -33,12 +33,46 @@
 }
 
 .quienesS{
-    margin: 2.5rem;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin: auto;
+}
+
+.parrafoQ{
+    display: flex;
+    flex-direction: row-reverse;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.imagenNotasQ{
+    width: 40%;
+    margin: 3rem;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px 5px map-get($colores, colorT);
+}
+
+.parrafoQ2{
+    display: flex;
+    flex-direction: row;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.staffResponsive{
+    display: none;
 }
 
 @media screen and (max-width: 450px){
@@ -72,8 +106,30 @@
         font-size: 8rem;
         font-weight: bold;
     }
-
     .quienesS{
-        margin: 2.5rem;
+        width: 80%;
+    }
+
+    .imagenNotasQ{
+        display: none;
+    }
+
+    .imagenEquipo{
+        width: 80%;
+        margin: 3rem;
+        border-radius: 15%;
+        box-shadow: 5px 5px 10px 5px map-get($colores, colorT);
+    }
+
+    .staffResponsive{
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+            color: #DAB88B;
+        }
     }
 }

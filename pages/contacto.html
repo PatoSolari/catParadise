@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logochico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
-<body>
+<body id="topC">
     <div class="layoutC">
         <header id="encabezado" class="header">
             <a href="../index.html"><img src="../images/logochico.png" alt="logo de la ONG"></a>
@@ -25,8 +26,8 @@
                 </ul>
             </nav>
         </header>
-        <div id="contacto" class="tituloC">
-            <h1 >Contacto</h1>
+        <div id=contacto class="parallax img-cuatro tituloC">
+            <h1>Contacto</h1>
         </div>
         <form id="form" class="formulario" action="">
             <h2>CONTACTO</h2>
@@ -51,7 +52,7 @@
                         <input class="boton" type="checkbox" value="m" name="maniana"><span class="formatoTTres">Mañana</span>
                     </div>
                     <div>
-                        <input class="boton" type="checkbox" value="t" name="tarde"><span class="formatoTTres">tarde</span>
+                        <input class="boton" type="checkbox" value="t" name="tarde"><span class="formatoTTres">Tarde</span>
                     </div>
                 </div>
                 <div class="formatoTDos">
@@ -77,9 +78,9 @@
                 </select>
             </div>
             <textarea name="mensaje" placeholder="Deje aquí su mensaje"></textarea>
-            <div>
-                <input class="boton" type="submit" value="Enviar">
-                <input class="boton" type="reset" value="Limpiar Formulario">
+            <div class="cntBtn">
+                <input class="boton btn btn-outline-success" type="submit" value="Enviar">
+                <input class="boton btn btn-outline-danger" type="reset" value="Limpiar Formulario">
             </div>
         </form>
         <div>
@@ -112,14 +113,18 @@
         </div>
         <footer id=pie class="footer">    
             <div>
-                <a href="www.whatsapp.com"><img class="logoRedes" src="../images/logoWhatsapp.png" alt="logo wtsp"></a>
-                <a href="www.instagram.com"><img class="logoRedes" src="../images/logoIg.png" alt="logo ig"></a>
-                <a href="www.twitter.com"><img class="logoRedes" src="../images/logoTwtr.png" alt="logo twtr"></a>
-                <a href="www.facebook.com"><img class="logoRedes" src="../images/logoFace.png" alt="logo fb"></a>
+                <a href="https://www.whatsapp.com"><img class="logoRedes" src="../images/logoWhatsapp.png" alt="logo wtsp"></a>
+                <a href="https://www.instagram.com"><img class="logoRedes" src="../images/logoIg.png" alt="logo ig"></a>
+                <a href="https://www.twitter.com"><img class="logoRedes" src="../images/logoTwtr.png" alt="logo twtr"></a>
+                <a href="https://www.facebook.com"><img class="logoRedes" src="../images/logoFace.png" alt="logo fb"></a>
             </div>
-            <h3>Web diseñada por Patricio Solari</h3>
-            <h3>Se reservan todos los derechos de autor</h3>
+            <h3><a href=#topC> Ir a arriba</a></h3>
+            <span>
+                <h4>Web diseñada por Patricio Solari</h4>
+                <h4>Se reservan todos los derechos de autor</h4>
+            </span>
         </footer>
     </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

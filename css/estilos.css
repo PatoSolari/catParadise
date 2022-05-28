@@ -16,8 +16,8 @@ body {
 .layoutI {
   display: grid;
   grid-template-areas: "headerI headerI" "tituloI tituloI" "subtituloI subtituloI" "nota1 aside" "nota2 aside" "footer footer";
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 10% 9% 7% 32% 34% 8%; }
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 10% 25% 7% 30% 30% 8%; }
 
 .header {
   margin: 0;
@@ -53,6 +53,9 @@ body {
 #headerI {
   grid-area: headerI; }
 
+.img-cinco {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg); }
+
 .tituloI {
   grid-area: tituloI;
   background-color: #F3E9DD; }
@@ -62,7 +65,12 @@ body {
     font-weight: bold;
     font-family: Asian;
     text-align: center;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
 
 .subtituloI {
   grid-area: subtituloI;
@@ -84,15 +92,17 @@ body {
   .nota1 h3 {
     color: #B7CADB;
     font-size: 3rem;
-    text-align: left;
-    margin-top: 1.5rem; }
+    text-align: center; }
   .nota1 > div {
     border-radius: 5%;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 10px 5px grey;
     width: 50%;
-    height: 90%; }
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 .nota2 {
   background-color: #F3E9DD;
@@ -105,15 +115,17 @@ body {
   .nota2 h3 {
     color: #B7CADB;
     font-size: 3rem;
-    text-align: left;
-    margin-top: 1.5rem; }
+    text-align: center; }
   .nota2 > div {
     border-radius: 5%;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 10px 5px grey;
     width: 50%;
-    height: 90%; }
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 .imagenNotas {
   width: 40%;
@@ -127,8 +139,7 @@ body {
   text-align: justify;
   font-weight: 0.5rem;
   text-indent: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: 1rem;
   font-family: Arial, Helvetica, sans-serif; }
 
 .formatoNotas {
@@ -185,11 +196,21 @@ table, th, tr, td {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between; }
-  .footer h3 {
-    font-size: 1.5rem;
+  .footer > h3 a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #FDF6EC;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 1.5px #B7CADB;
+    transition: all 1s; }
+    .footer > h3 a:hover {
+      color: #B7CADB; }
+  .footer h4 {
+    font-size: 1.1rem;
     margin-left: 25px;
     color: brown; }
-  .footer div {
+  .footer > div {
     display: flex;
     justify-content: space-around;
     border: #B7CADB;
@@ -228,6 +249,20 @@ table, th, tr, td {
         font-size: 1rem;
         justify-content: space-between;
         flex-wrap: wrap; }
+  .parallax {
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    max-width: 100%;
+    position: relative; }
+  .parallax div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
   .tituloI h1 {
     font-size: 8rem;
     padding-top: 2rem; }
@@ -311,8 +346,11 @@ table, th, tr, td {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 2rem; }
-    .footer h3 {
-      font-size: 1.5rem;
+    .footer > h3 a {
+      font-size: 1.5rem; }
+    .footer h4 {
+      text-align: center;
+      font-size: 0.9rem;
       color: brown; }
     .footer div {
       display: flex;
@@ -326,11 +364,23 @@ table, th, tr, td {
     height: 30px;
     margin: 15px; } }
 
+.img-cuatro {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotocontacto.jpg); }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  max-width: 100%;
+  position: relative; }
+
 .layoutC {
   display: grid;
   grid-template-areas: "encabezado encabezado" "contacto contacto" "form ubi" "form data" "pie pie";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 11.4% 9% 45% 28% 8%; }
+  grid-template-rows: 9.8% 26% 43% 17% 8%; }
 
 #encabezado {
   grid-area: encabezado; }
@@ -351,21 +401,22 @@ table, th, tr, td {
   grid-area: pie; }
 
 .tituloC {
-  grid-area: tituloI; }
-
-.tituloC h1 {
-  color: #B7CADB;
-  font-size: 10rem;
-  font-weight: bold;
-  font-family: Asian;
-  text-align: center;
-  padding-top: 2rem; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .tituloC h1 {
+    color: #B7CADB;
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Asian;
+    text-align: center;
+    padding-top: 2rem; }
 
 form {
   width: 500px;
-  height: 600px;
   padding: 20px;
   margin: 35px;
+  margin-top: 4rem;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -398,8 +449,15 @@ form textarea {
   max-height: 200px;
   min-height: 200px; }
 
-.boton:hover {
-  cursor: pointer; }
+.cntBtn {
+  display: flex;
+  justify-content: space-evenly; }
+
+.boton {
+  margin-top: 1rem;
+  font-size: 1.6rem; }
+  .boton:hover {
+    cursor: pointer; }
 
 .formatoT {
   font-size: 2rem;
@@ -411,17 +469,21 @@ form textarea {
   font-family: Arial, Helvetica, sans-serif;
   color: #B7CADB;
   margin-top: 10px; }
+  .formatoTDos select {
+    font-size: 1.5rem; }
 
 .formatoTTres {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: #5a7fa0; }
+  color: #5a7fa0;
+  padding-left: 0.5rem; }
 
 .ubicacion {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-top: 4rem; }
   .ubicacion h2 {
     color: #DAB88B;
     font-size: 4rem;
@@ -435,7 +497,6 @@ form textarea {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 10px 5px gray;
   width: 80%;
-  height: 35%;
   margin-top: 4rem; }
 
 .formatoU {
@@ -456,6 +517,17 @@ form textarea {
     margin: 0.7rem; }
 
 @media screen and (max-width: 450px) {
+  .img-cuatro {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotocontacto.jpg);
+    width: 360px; }
+  .parallax {
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    position: relative; }
   .layoutC {
     display: grid;
     grid-template-areas: "encabezado" "contacto" "form" "form" "ubi" "data" "pie";
@@ -474,8 +546,7 @@ form textarea {
     flex-direction: column;
     overflow: hidden;
     justify-content: space-between;
-    align-items: justify;
-    margin: auto; }
+    align-items: justify; }
     form h2 {
       text-align: center;
       font-size: 3rem;
@@ -546,7 +617,7 @@ form textarea {
   padding-top: 2rem; }
 
 .img-dos {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg); }
 
 .parallax2 {
   background-attachment: fixed;
@@ -587,7 +658,7 @@ form textarea {
     font-size: 8rem;
     padding-top: 0.5rem; }
   .img-dos {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg); }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg); }
   .parallax2 {
     background-attachment: unset;
     background-position: center;
@@ -632,12 +703,40 @@ form textarea {
   align-items: center; }
 
 .quienesS {
-  margin: 2.5rem;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: auto; }
+
+.parrafoQ {
+  display: flex;
+  flex-direction: row-reverse; }
+  .parrafoQ div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+
+.imagenNotasQ {
+  width: 40%;
+  margin: 3rem;
+  border-radius: 15%;
+  box-shadow: 5px 5px 10px 5px #B7CADB; }
+
+.parrafoQ2 {
+  display: flex;
+  flex-direction: row; }
+  .parrafoQ2 div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+
+.staffResponsive {
+  display: none; }
 
 @media screen and (max-width: 450px) {
   .img-uno {
@@ -662,7 +761,23 @@ form textarea {
     font-size: 8rem;
     font-weight: bold; }
   .quienesS {
-    margin: 2.5rem; } }
+    width: 80%; }
+  .imagenNotasQ {
+    display: none; }
+  .imagenEquipo {
+    width: 80%;
+    margin: 3rem;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px 5px #B7CADB; }
+  .staffResponsive {
+    display: flex;
+    flex-direction: column; }
+    .staffResponsive h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 0.7rem;
+      margin-top: 2rem;
+      color: #DAB88B; } }
 
 #tituloR {
   color: #B7CADB;
@@ -716,7 +831,7 @@ form textarea {
   grid-area: card; }
 
 .img-tres {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotoGatitos.jpg); }
 
 .parallax3 {
   background-attachment: fixed;
@@ -746,7 +861,7 @@ form textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; }
   .img-tres {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/portadaRescate.jpg); }
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fotoGatitos.jpg); }
   .parallax3 {
     background-attachment: unset;
     background-position: center;

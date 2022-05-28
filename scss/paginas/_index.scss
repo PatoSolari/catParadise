@@ -1,9 +1,9 @@
 @mixin titulonota {
     color: map-get($colores, colorT);
     font-size: 3rem;
-    text-align: left;
-    margin-top: 1.5rem;
+    text-align: center;
 }
+
 @mixin formatonoticia {
     border-radius: 5%;
     padding: 1.5rem;
@@ -41,8 +41,8 @@ body{
         "nota1 aside"
         "nota2 aside"
         "footer footer";
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 10% 9% 7% 32% 34% 8%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10% 25% 7% 30% 30% 8%;
 }
 
 .header{
@@ -88,6 +88,10 @@ body{
     grid-area: headerI;
 }
 
+.img-cinco{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/muchosgatos.jpg);
+}
+
 .tituloI{
     grid-area: tituloI;
     background-color: map-get($colores, colorFondo);
@@ -98,6 +102,11 @@ body{
         font-family: Asian;
         text-align: center;
         padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -125,6 +134,9 @@ body{
     }
     > div{
         @include formatonoticia;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -141,6 +153,9 @@ body{
     }
     > div{
         @include formatonoticia;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -157,8 +172,7 @@ body{
     text-align: justify;
     font-weight: 0.5rem;
     text-indent: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -222,12 +236,26 @@ table, th, tr, td{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    h3{
-        font-size: 1.5rem;
+    >h3{
+        a{
+            font-size: 1.8rem;
+            text-decoration: none; 
+            color:   #FDF6EC;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 1.5px 1.5px 1.5px map-get($colores, colorT);
+            transition: all 1s;
+            &:hover{
+                color: map-get($colores, colorT);
+            }
+        }
+    }
+    h4{
+        font-size: 1.1rem;
         margin-left: 25px;
         color: brown;
     }
-    div{
+    >div{
         display: flex;
         justify-content: space-around;
         border: map-get($colores, colorT);
@@ -280,6 +308,26 @@ table, th, tr, td{
             }
         }
     }
+
+    .parallax{
+        background-attachment: unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15rem;
+        max-width: 100%;
+        position: relative;
+    }
+    .parallax{
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
     .tituloI{
         h1{
             font-size: 8rem;
@@ -383,8 +431,14 @@ table, th, tr, td{
         align-items: center;
         justify-content: space-between;
         padding-bottom: 2rem;
-        h3{
-            font-size: 1.5rem;
+        >h3{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+        h4{
+            text-align: center;
+            font-size: 0.9rem;
             color: brown;
         }
         div{
