@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-template-areas: "headerI headerI" "tituloI tituloI" "subtituloI subtituloI" "nota1 aside" "nota2 aside" "footer footer";
   grid-template-columns: 75% 25%;
-  grid-template-rows: 10% 25% 7% 30% 30% 8%; }
+  grid-template-rows: 8.4% 25% 7% 30% 30% 8%; }
 
 .header {
   margin: 0;
@@ -157,6 +157,7 @@ body {
     font-size: 3rem;
     text-align: center;
     justify-content: center;
+    align-content: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2rem; }
 
@@ -173,7 +174,7 @@ table, th, tr, td {
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin-left: 5rem;
+  margin-left: 10rem;
   flex-wrap: nowrap; }
 
 .ayuda {
@@ -380,7 +381,7 @@ table, th, tr, td {
   display: grid;
   grid-template-areas: "encabezado encabezado" "contacto contacto" "form ubi" "form data" "pie pie";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 9.8% 26% 43% 17% 8%; }
+  grid-template-rows: 9% 26% 43% 17% 8%; }
 
 #encabezado {
   grid-area: encabezado; }
