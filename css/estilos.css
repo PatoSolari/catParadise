@@ -90,7 +90,7 @@ body {
   justify-content: space-evenly;
   align-items: center; }
   .nota1 h3 {
-    color: #B7CADB;
+    color: #a77a28;
     font-size: 3rem;
     text-align: center; }
   .nota1 > div {
@@ -113,7 +113,7 @@ body {
   flex-direction: row-reverse;
   padding-top: 15px; }
   .nota2 h3 {
-    color: #B7CADB;
+    color: #a77a28;
     font-size: 3rem;
     text-align: center; }
   .nota2 > div {
@@ -129,7 +129,7 @@ body {
 
 .imagenNotas {
   width: 40%;
-  height: 90%;
+  height: 80%;
   margin: 3rem;
   border-radius: 15%;
   box-shadow: 5px 5px 10px 5px #B7CADB; }
@@ -247,7 +247,7 @@ table, th, tr, td {
       .header nav ul {
         display: flex;
         list-style-type: none;
-        font-size: 1rem;
+        font-size: 1.2rem;
         justify-content: space-between;
         flex-wrap: wrap; }
   .parallax {
@@ -546,8 +546,9 @@ form textarea {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    justify-content: space-between;
-    align-items: justify; }
+    justify-content: center;
+    align-content: center;
+    margin: auto; }
     form h2 {
       text-align: center;
       font-size: 3rem;
@@ -591,7 +592,7 @@ form textarea {
   .ubicacion iframe {
     width: 324px;
     height: 250px;
-    margin-left: 2rem; }
+    margin-left: 6rem; }
   .datos {
     width: 90%;
     height: auto;
